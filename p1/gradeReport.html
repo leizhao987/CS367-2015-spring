@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <title>Grading - CS 367, Spring 2015 Programming Assignment 1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <style type="text/css">
+    h1 {
+      text-align: center;
+    }
+    td.header {
+      text-align: center;
+      width: 100pt;
+    }
+  </style>
+</head>
+<body>
+  <h1>CS 367, Spring 2015 Programming Assignment 1</h1>
+<table>
+  <tr>
+    <td class="header"></td><th>Partner 1</th><th>Partner 2</th><th>Score</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <td class="header">Zhao, Lei</td>
+    <td class="header"></td>
+    <td class="header"><b>90</b></td>
+  </tr>
+  <tr>
+    <th>CS Login</th>
+    <td class="header">lzhao</td>
+    <td class="header"></td>
+    <td class="header">(out of <b>120</b>)</td>
+  </tr>
+
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <th>Grader</th>
+    <td colspan=2>Sourav Das ( souravd )</td>
+  </tr>
+
+</table>
+<h2>General Comments</h2>
+none<hr/>
+<h2><u>&nbsp;&nbsp;0&nbsp;&nbsp;</u> General Issues (Deduction Only)</h2></ul>
+<h2><u>&nbsp;&nbsp;4&nbsp;&nbsp;</u> Karma class (6 points)</h2>
+<ul>
+<li>upvote(PostType type) (-3)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid type. (-1)</li>
+</ul>
+<li>downvote(PostType type) (-3)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid type. (-1)</li>
+</ul>
+</ul>
+<h2><u>&nbsp;&nbsp;5&nbsp;&nbsp;</u> Post class (9 points)</h2>
+<ul>
+<li>Post(User user, String subreddit, PostType type, String title) (-5)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid user. (-1)</li>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid subreddit. (-1)</li>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid type. (-1)</li>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid title. (-1)</li>
+</ul>
+</ul>
+<h2><u>&nbsp;&nbsp;20&nbsp;&nbsp;</u> User class (30 points)</h2>
+<ul>
+<li>User(String name) (-5)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid name. (-1)</li>
+</ul>
+<li>subscribe(String subreddit) (-3)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid subreddit. (-1)</li>
+</ul>
+<li>unsubscribe(String subreddit) (-2)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid subreddit. (-1)</li>
+</ul>
+<li>addPost(String subreddit, PostType type, String title) (-4)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid subreddit. (-1)</li>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid type. (-1)</li>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid title. (-1)</li>
+</ul>
+<li>like(Post post) (-4)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid post. (-1)</li>
+</ul>
+<li>undoLike(Post post) (-2)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid post. (-1)</li>
+</ul>
+<li>dislike(Post post) (-4)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid post. (-1)</li>
+</ul>
+<li>undoDislike(Post post) (-2)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid post. (-1)</li>
+</ul>
+</ul>
+<h2><u>&nbsp;&nbsp;25&nbsp;&nbsp;</u> RedditDB class (30 points)</h2>
+<ul>
+<li>addUser(String name) (-5)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid name. (-1)</li>
+</ul>
+<li>findUser(String name) (-3)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid name. (-1)</li>
+</ul>
+<li>delUser(String name) (-6)</li>
+<ul>
+<li><b>(-1)</b> Doesn't throw IllegalArgumentException for invalid name. (-1)</li>
+<li><b>(-1)</b> Doesn't undo others' likes for posted items. (-1)<br /><b>Comments:</b> Just undoes like for the 1st user in the users list.
+Perhaps you should have moved ListIterator<Post> post_itr = delPost.listIterator(); inside the while loop for user iterator.</li>
+<li><b>(-1)</b> Doesn't undo others' dislikes for posted items. (-1)</li>
+</ul>
+</ul>
+<h2><u>&nbsp;&nbsp;11&nbsp;&nbsp;</u> Reddit class (15 points)</h2>
+<ul>
+<li><b>(-2)</b> Crashed due to a minor bug, which we fixed [-2/bug] (-10)<br /><b>Comments:</b> You have created multiple scanner objects on the input stream (System.in) which is not allowed as per program specification. See announcement section in P1. </li>
+<li><b>(-2)</b> The simulation (-10)<br /><b>Comments:</b> There are differences between your output and the expected output. Specially in the karmas.</li>
+</ul>
+<h2><u>&nbsp;&nbsp;9&nbsp;&nbsp;</u> Program design (10 points)</h2>
+<ul>
+<li><b>(-1)</b> All data members should be <b>private</b> for this assignment and should not be accessed directly outside the class they were declared (-3)<br /><b>Comments:</b> Data members in Reddit class should be explicitly declared as private.</li>
+</ul>
+<h2><u>&nbsp;&nbsp;9&nbsp;&nbsp;</u> Style (10 points)</h2>
+<ul>
+<li><b>(-1)</b> Use symbolic constants where appropriate (-1)<br /><b>Comments:</b> "admin", "COMMENT", the command options, etc were good candidates to be declared as constants.</li>
+</ul>
+<h2><u>&nbsp;&nbsp;7&nbsp;&nbsp;</u> Commenting (10 points)</h2>
+<ul>
+<li>Missing/incomplete METHOD header comments - every method should have one (-5)</li>
+<ul>
+<li><b>(-1)</b> Method headers should explain their arguments, not just list them (-1)</li>
+</ul>
+<li><b>(-2)</b> Missing/incomplete comments within methods (-2)<br /><b>Comments:</b> Use code comments to explain the logic contained with the methods.</li>
+</ul>
+</body>
+</html>

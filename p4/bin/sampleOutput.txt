@@ -1,0 +1,314 @@
+admin@CS367$ uinfo
+admin
+Folders owned :
+	root/cs302
+	root/cs302/h1
+	root/cs367
+	root/cs367/h1
+	root/cs367/p1
+
+Files owned :
+	root/cs302/h1/h1.txt
+	root/cs367/h1/h1.txt
+	root/cs367/h1/soln.txt
+	root/cs367/p1/ques.txt
+
+ash
+Folders owned :
+
+Files owned :
+
+pikachu
+Folders owned :
+
+Files owned :
+
+rock
+Folders owned :
+
+Files owned :
+
+voldemort
+Folders owned :
+
+Files owned :
+
+harry
+Folders owned :
+
+Files owned :
+
+admin@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+admin@CS367$ u ash
+ash@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+ash@CS367$ cd 302
+ash@CS367$ Invalid location passed
+ash@CS367$ cd cs302
+ash@CS367$ ls
+h1 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+ash@CS367$ reset
+admin@CS367$ Reset done
+admin@CS367$ pwd
+/root
+admin@CS367$ mkdir cs202
+admin@CS367$ cs202 added
+admin@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs202 : admin : (admin,w)
+admin@CS367$ uinfo
+admin
+Folders owned :
+	root/cs302
+	root/cs302/h1
+	root/cs367
+	root/cs367/h1
+	root/cs367/p1
+	root/cs202
+
+Files owned :
+	root/cs302/h1/h1.txt
+	root/cs367/h1/h1.txt
+	root/cs367/h1/soln.txt
+	root/cs367/p1/ques.txt
+
+ash
+Folders owned :
+
+Files owned :
+
+pikachu
+Folders owned :
+
+Files owned :
+
+rock
+Folders owned :
+
+Files owned :
+
+voldemort
+Folders owned :
+
+Files owned :
+
+harry
+Folders owned :
+
+Files owned :
+
+admin@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs202 : admin : (admin,w)
+admin@CS367$ cd cs202
+admin@CS367$ ls
+admin@CS367$ mkfile intro.txt hdagd
+admin@CS367$ intro.txt added
+admin@CS367$ ls
+intro.txt : admin : (admin,w)
+admin@CS367$ uinfo
+admin
+Folders owned :
+	root/cs302
+	root/cs302/h1
+	root/cs367
+	root/cs367/h1
+	root/cs367/p1
+	root/cs202
+
+Files owned :
+	root/cs302/h1/h1.txt
+	root/cs367/h1/h1.txt
+	root/cs367/h1/soln.txt
+	root/cs367/p1/ques.txt
+	root/cs202/intro.txt
+
+ash
+Folders owned :
+
+Files owned :
+
+pikachu
+Folders owned :
+
+Files owned :
+
+rock
+Folders owned :
+
+Files owned :
+
+voldemort
+Folders owned :
+
+Files owned :
+
+harry
+Folders owned :
+
+Files owned :
+
+admin@CS367$ pwd
+root/cs202
+admin@CS367$ cd ../../
+admin@CS367$ Invalid location passed
+admin@CS367$ cd ../
+admin@CS367$ pwd
+/root
+admin@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs202 : admin : (admin,w)
+admin@CS367$ sh cs202 ash r
+admin@CS367$ Privilege granted
+admin@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs202 : admin : (admin,w),(ash,r)
+admin@CS367$ uinfo
+admin
+Folders owned :
+	root/cs302
+	root/cs302/h1
+	root/cs367
+	root/cs367/h1
+	root/cs367/p1
+	root/cs202
+
+Files owned :
+	root/cs302/h1/h1.txt
+	root/cs367/h1/h1.txt
+	root/cs367/h1/soln.txt
+	root/cs367/p1/ques.txt
+	root/cs202/intro.txt
+
+ash
+Folders owned :
+
+Files owned :
+
+pikachu
+Folders owned :
+
+Files owned :
+
+rock
+Folders owned :
+
+Files owned :
+
+voldemort
+Folders owned :
+
+Files owned :
+
+harry
+Folders owned :
+
+Files owned :
+
+admin@CS367$ u ash
+ash@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs202 : admin : (admin,w),(ash,r)
+ash@CS367$ rm cs202
+ash@CS367$ Insufficient privilege
+ash@CS367$ 
+ash@CS367$ sh cs202 rock
+ash@CS367$ Four Arguments Needed
+ash@CS367$ sh cs202 rock r
+ash@CS367$ Insufficient privilege
+ash@CS367$ rm cs202
+ash@CS367$ Insufficient privilege
+ash@CS367$ uinfo
+ash@CS367$ Insufficient privileges
+ash@CS367$ pwd
+/root
+ash@CS367$ cd cs202
+ash@CS367$ pwd
+root/cs202
+ash@CS367$ u rock
+rock@CS367$ pwd
+/root
+rock@CS367$ ls
+cs302 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+rock@CS367$ u admin
+admin@CS367$ cd cs302
+admin@CS367$ mkdir p4
+admin@CS367$ p4 added
+admin@CS367$ ls
+h1 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+p4 : admin : (admin,w)
+admin@CS367$ cd ../../
+admin@CS367$ Invalid location passed
+admin@CS367$ cd ../
+admin@CS367$ pwd
+/root
+admin@CS367$ cd cs302/p4
+admin@CS367$ ls
+admin@CS367$ pwd
+root/cs302/p4
+admin@CS367$ reset
+admin@CS367$ Reset done
+admin@CS367$ rm cs302
+admin@CS367$ cs302 removed
+admin@CS367$ uinfo
+admin
+Folders owned :
+	root/cs367
+	root/cs367/h1
+	root/cs367/p1
+	root/cs202
+
+Files owned :
+	root/cs367/h1/h1.txt
+	root/cs367/h1/soln.txt
+	root/cs367/p1/ques.txt
+	root/cs202/intro.txt
+
+ash
+Folders owned :
+
+Files owned :
+
+pikachu
+Folders owned :
+
+Files owned :
+
+rock
+Folders owned :
+
+Files owned :
+
+voldemort
+Folders owned :
+
+Files owned :
+
+harry
+Folders owned :
+
+Files owned :
+
+admin@CS367$ ls
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs202 : admin : (admin,w),(ash,r)
+admin@CS367$ u ash
+ash@CS367$ ls
+cs367 : admin : (admin,w),(ash,r),(pikachu,r),(rock,r),(voldemort,r),(harry,r)
+cs202 : admin : (admin,w),(ash,r)
+ash@CS367$ cd cs202
+ash@CS367$ l
+ash@CS367$ Invalid command
+ash@CS367$ ls
+intro.txt : admin : (admin,w),(ash,r)
+ash@CS367$ x
+

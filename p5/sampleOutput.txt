@@ -1,0 +1,85 @@
+>> //The following demonstrates how to inspect the social network with connection, friends and fof
+Invalid command
+>> login Zhi
+Logged in as Zhi
+>> connection Adi
+You are not connected to Adi
+>> friends
+You do not have any friends
+>> fof
+You do not have any friends of friends
+>> logout
+Logged out
+>> login Nat
+Logged in as Nat
+>> connection Adi
+You are not connected to Adi
+>> friends
+[Van]
+>> fof
+You do not have any friends of friends
+>> logout
+Logged out
+>> login Adi
+Logged in as Adi
+>> connection Sue
+[Adi, Sue]
+>> connection Bob
+[Adi, Sue, Bob]
+>> connection Lee
+[Adi, Sue, Kim, Lee]
+>> fof
+[Bob, Kim]
+>> logout
+Logged out
+>> login Sue
+Logged in as Sue
+>> friends
+[Adi, Bob, Kim]
+>> fof
+[Lee, May]
+>> logout
+Logged out
+>> //The following demonstrates how to create/destroy social connections with friend and unfriend
+Invalid command
+>> login Kim
+Logged in as Kim
+>> connection Zhi
+You are not connected to Zhi
+>> friends
+[Bob, Lee, May, Sue]
+>> friend Zhi
+You are now friends with Zhi
+>> friends
+[Bob, Lee, May, Sue, Zhi]
+>> logout
+Logged out
+>> login Zhi
+Logged in as Zhi
+>> friends
+[Kim]
+>> fof
+[Bob, Lee, May, Sue]
+>> unfriend Kim
+You are no longer friends with Kim
+>> friends
+You do not have any friends
+>> fof
+You do not have any friends of friends
+>> unfriend Nat
+You are already not friends with Nat
+>> logout
+Logged out
+>> //The following demonstrates how a shortest path to P2 can change even when you make friends with someone who's not P2
+Invalid command
+>> login Lee
+Logged in as Lee
+>> connection Adi
+[Lee, Kim, Sue, Adi]
+>> friend Sue
+You are now friends with Sue
+>> connection Adi
+[Lee, Sue, Adi]
+>> logout
+Logged out
+>> exit
